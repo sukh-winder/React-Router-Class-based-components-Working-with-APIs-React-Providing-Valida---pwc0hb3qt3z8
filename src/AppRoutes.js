@@ -1,16 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 export const AppRoutes = () => {
     return (
-        <Router>
         <>
         <Switch>
+        <Redirect to="/" />
         <Route exact path="/"> <Index/> </Route>
         <Route exact path="/home"><Home/> </Route>
         <Route><NotFound/> </Route>
         </Switch>
         </>
-        </Router>
     )
 }
