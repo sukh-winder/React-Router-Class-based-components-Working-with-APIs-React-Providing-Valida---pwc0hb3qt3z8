@@ -1,15 +1,20 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom'
+import React from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom'
+import Home from "./Pages/Home"
+import Index from './Pages/Index'
+import NotFound from "./Pages/NotFound"
 
 export const AppRoutes = () => {
     return (
         <>
-        <Switch>
-        <Redirect to="/" />
-        <Route exact path="/"> <Index/> </Route>
-        <Route exact path="/home"><Home/> </Route>
-        <Route><NotFound/> </Route>
-        </Switch>
+        <Routes>
+        <Route exact path="/" element={<Index/>}> </Route>
+        <Route exact path="/home" element={<Home/>}></Route>
+        <Route path='*' element={<NotFound />} />
+        <Route render={() => <Navigate to="/" />} />
+        </Routes>
         </>
     )
 }
+
