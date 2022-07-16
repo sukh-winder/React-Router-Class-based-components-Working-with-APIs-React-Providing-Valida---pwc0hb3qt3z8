@@ -1,5 +1,4 @@
 import React from 'react';
-import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom'
 import Home from "./Pages/Home"
 import Index from './Pages/Index'
@@ -12,9 +11,7 @@ export const AppRoutes = () => {
         <Route exact path="/" element={<Index/>}> </Route>
         <Route exact path="/home" element={<Home/>}></Route>
         <Route path='*' element={<NotFound />} />
-        <Route render={() => <Navigate to="/" />} />
         </Routes>
         </>
     )
 }
-
