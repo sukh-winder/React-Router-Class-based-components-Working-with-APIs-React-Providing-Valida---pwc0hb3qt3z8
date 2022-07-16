@@ -5,5 +5,4 @@ import React from 'react'
      <div id="index-page">Index Page</div>
     )
 }
-
- export default Index
+export default Index
