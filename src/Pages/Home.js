@@ -5,5 +5,4 @@ import React from 'react';
         <div id="home-page">Home Page</div>
     )
 }
-
- export default Home
+export default Home
