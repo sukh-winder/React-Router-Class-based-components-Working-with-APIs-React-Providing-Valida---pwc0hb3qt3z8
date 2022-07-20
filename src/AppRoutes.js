@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom'
-import Home from "./Pages/Home"
-import Index from './Pages/Index'
-import NotFound from "./Pages/NotFound"
+import {Home} from "./Pages/Home"
+import {Index} from './Pages/Index'
+import {NotFound} from "./Pages/NotFound"
 
 export const AppRoutes = () => {
     return (
