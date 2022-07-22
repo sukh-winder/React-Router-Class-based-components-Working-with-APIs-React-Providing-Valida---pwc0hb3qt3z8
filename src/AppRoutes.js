@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Home} from "./Pages/Home"
 import {Index} from './Pages/Index'
 import {NotFound} from "./Pages/NotFound"
